@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Lar da Esperança",
+    "description": "O Lar da Esperança oferece um ambiente acolhedor para crianças em situação de vulnerabilidade. Nossas instalações são projetadas para proporcionar segurança e conforto, com uma equipe dedicada a apoiar o desenvolvimento emocional e educativo das crianças.",
+    "service_hours": "Segunda a sexta-feira, das 8h às 17h",
+    "open_on_weekends": "Sim",    
+      "position": {
+        "latitude": -21.1727,
+        "longitude": -47.8103
+      },
+      "image": "kids-playground-1.png"
+  },
+  {
+    "name": "Casa da Criança Feliz",
+    "description": "A Casa da Criança Feliz se dedica a fornecer um lar temporário para crianças e adolescentes, com foco em oferecer suporte emocional e psicológico, bem como oportunidades educacionais e recreativas. Trabalhamos para garantir que cada criança receba a atenção e os cuidados necessários.",
+    "service_hours": "Segunda a sexta-feira, das 7h às 18h",
+    "open_on_weekends": "Sim",    
+    "position": {
+      "latitude": -21.190133827751083,
+      "longitude": -47.77565717697144
+    },
+      "image": "kids-playground-2.png"
+  },
+  {
+    "name": "Refúgio da Infância",
+    "description": "O Refúgio da Infância é um espaço seguro e amoroso dedicado ao cuidado de crianças em situações de risco. Oferecemos apoio integral, incluindo atividades educacionais, terapias e acompanhamento psicológico, para promover o bem-estar e o desenvolvimento das crianças.",
+    "service_hours": "Segunda a sábado, das 8h às 20h",
+    "open_on_weekends": "Sim",    
+    "position": {
+      "latitude": -21.1727,
+      "longitude": -47.8103
+    },
+      "image": "kids-playground-3.png"
+  },
+  {
+    "name": "Novo Horizonte",
+    "description": "O Novo Horizonte é um orfanato que visa transformar vidas através de uma abordagem holística no cuidado infantil. Oferecemos uma variedade de programas que abrangem educação, saúde e bem-estar emocional para apoiar cada criança em seu crescimento e desenvolvimento.",
+    "service_hours": "Segunda a sexta-feira, das 8h às 16h",
+    "open_on_weekends": "Sim",    
+    "position": {
+      "latitude": -21.18781301674834,
+      "longitude": -47.77323246002198
+    },
+      "image": "kids-playground-4.png"
+  },
+  {
+    "name": "Abrigo da Alegria",
+    "description": "O Abrigo da Alegria proporciona um ambiente carinhoso e seguro para crianças em situação de risco. Nossos serviços incluem educação, alimentação, cuidados médicos e atividades recreativas para promover o desenvolvimento integral das crianças.",
+    "service_hours": "Segunda a sexta-feira, das 9h às 17h",
+    "open_on_weekends": "Sim",    
+    "position": {
+      "latitude": -21.1727,
+      "longitude": -47.8103
+    },
+      "image": "kids-playground-5.png"
+  }
+]
