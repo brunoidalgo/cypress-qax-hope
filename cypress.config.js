@@ -1,17 +1,31 @@
+require('dotenv').config();
+
 const { defineConfig } = require("cypress");
 const { configurePlugin } = require('cypress-mongodb');
 
+const { configureAllureAdapterPlugins } = require ('@mmisty/cypress-allure-adapter/plugins');
+
 module.exports = defineConfig({
   env: {
+    allure: true,
+    baseApi:process.env.BASE_API,
     mongodb: {
-        uri: 'mongodb+srv://qax:xperience@cluster0.bthgy.mongodb.net/HopeDB?retryWrites=true&w=majority&appName=Cluster0',
-        database: 'HopeDB',
+        uri: process.env.MONGO_URI,
+        database: process.env.DATABASE_NAME,
         // collection:'orphanages'
             }
       },
   e2e: {
     setupNodeEvents(on, config) {
+      configureAllureAdapterPlugins(on, config);
       configurePlugin(on);
+
+      return config;
     },
+    specPattern: [
+      './cypress/support/hooks/index.cy.js',
+      './cypress/e2e/**'
+    ],
+    baseUrl: process.env.BASE_URL
   }
 });

@@ -36,12 +36,12 @@ Cypress.Commands.add('postOrphanage', () => {
             formData.append('latitude', orphanage.position.latitude);
             formData.append('longitude', orphanage.position.longitude);
             formData.append('opening_hours', orphanage.opening_hours);
-            formData.append('open_on_weekends', true);
+            formData.append('open_on_weekends', orphanage.open_on_weekends);
             formData.append('images', blob, orphanage.image);
 
             cy.request({
                 method: 'POST',
-                url: 'http://localhost:3333/orphanages',
+                url: `${Cypress.env('baseApi')}/orphanages`,
                 headers: {
                     'content-type': 'multipart/form-data',
                 },

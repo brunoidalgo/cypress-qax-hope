@@ -6,6 +6,11 @@ describe('Testes com Mapa', () => {
         cy.deleteMany({name: orphanage.name}, {collection: 'orphanages'});
         cy.postOrphanage();
 
-        cy.visitWtihMockGeolocation('http://localhost:3000/map');
+        cy.openOrphanage(orphanage.name);
+
+        cy.contains('h1', orphanage.name)
+        .should('be.visible');
+
+        cy.googleMapLink(orphanage.position);
     });
 });
